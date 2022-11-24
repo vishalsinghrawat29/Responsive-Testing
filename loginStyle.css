@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;500;600;700;800;900&display=swap');
+:root{
+    --light-text-color: #eff5f3;
+    --dark-text-color: #24282C;
+    --primary-color: #277558;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+body{
+    margin:0 !important;
+    padding: 0 !important;
+    background: var(--light-text-color);
+    font-family: 'Lexend', sans-serif;
+}
+.login-banner{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: var(--light-text-color);
+}
+.login-banner-card{
+    background: linear-gradient(90deg, rgb(28, 154, 123) 0%, rgb(43, 99, 72) 50%, rgb(36, 62, 55) 100%);
+    height: 100vh;
+}
+.login-banner-card img{
+    display: none;
+}
+
+.login-banner-text{
+    position: absolute;
+    top: 25%;
+    padding: 24px;
+    width: 60%;
+    color: var(--light-text-color);
+}
+
+.login-banner-text h1{
+    font-size: 110px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.login-banner-text p{
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+.login-banner-form{
+    background-color: var(--light-text-color);
+    height: 100vh;
+    width: 86%;
+    margin: 0 auto;
+}
+.login-banner-form img{
+    width: 10rem;
+    margin: 3rem 0rem 0rem 0rem;
+}
+.login-banner-form h2{
+    font-size: 44px;
+    font-weight: 500;
+    margin: 3rem 0rem 0.5rem 0rem;
+}
+
+.login-banner-form p{
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0rem 0rem 3rem 0rem;
+    color: var(--dark-text-color);
+}
+.login-banner-form .link{
+    margin-top: -2rem;
+    text-align: center;
+}
+
+.login-banner-form .link a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.login-banner-form label{
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 2rem 0rem 0.5rem 0rem;
+}
+.login-banner-form .login-input{
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.8rem;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    border: 0.5px solid var(--dark-text-color);
+}
+
+.login-button{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 3rem 0rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+
+@media (max-width: 630px) {
+    
+    .login-banner{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .login-banner-card{
+        height: 40vh;
+    }
+    .login-banner-card img{
+        display: block;
+        width:5rem;
+        margin: 0.9rem 0rem 0rem 1rem;
+    }
+    
+    .login-banner-text{
+        top: 10%;
+        padding: 1rem;
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .login-banner-text h1{
+        font-size: 2.6rem;
+    }
+    
+    .login-banner-text p{
+        font-size: 0.7rem;
+        font-weight: lighter;
+        margin-top: 0.8rem;
+    }
+    .login-banner-form{
+        width: 90%;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    .login-banner-form img{
+        display: none;
+    }
+    .login-banner-form h2{
+        font-size: 2rem;
+        margin: 1rem 0rem 0.3rem 0rem;
+    }
+    
+    .login-banner-form p{
+        font-size: 0.9rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+    .login-banner-form .link{
+        margin-top: -1rem;
+    }
+    
+    .login-banner-form label{
+        font-size: 0.9rem;
+        margin: 1.2rem 0rem 0rem 0rem;
+    }
+    .login-banner-form .login-input{
+        padding: 0.4rem;
+        margin-top: 0.3rem;
+        font-size: 0.9rem;
+        border: 0.3px solid var(--dark-text-color);
+    }
+    
+    .login-button{
+        padding: 0.6rem;
+        font-size: 0.8rem;
+        margin: 1.5rem 0rem;
+
+    }
+
+}
